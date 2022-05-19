@@ -11,7 +11,10 @@ package com.company;
         this.age = age;
     }
 
-    void age() {
+     public Model() {
+     }
+
+     void age() {
         int ag;
         ag = age;
         System.out.println("Вік моделі : " + ag);
@@ -50,5 +53,9 @@ package com.company;
         this.age = age;
     }
 
+    void ideal(){//ідеальна маса тіла
+         double i = (getHeight() + 100) * 0.5;
+        System.out.println("Ідеальна маса тіла: " + i );
 
+    }
 }

@@ -1,5 +1,5 @@
 package com.company;
-    class Hall {
+    class Hall extends Podium{
    private int seat;
    private int personnel;
    private double square;
@@ -52,5 +52,9 @@ package com.company;
     void s (Podium podium){
         System.out.println(square);
          System.out.println("Площа залу без подіуму: " + (square - (podium.getWidth() * podium.getLenght())) );
+     }
+     void backSeat (){
+         len2x(1,3,23);
+         System.out.println("Кількість місць: " + getSeat());
      }
 }

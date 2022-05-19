@@ -1,12 +1,13 @@
 package com.company;
- class Podium {
+ class Podium extends Model{
    private double height;
    private double width;
    private double lenght;
 
      Podium(double height, double width, double lenght) {
+         super();
 
-        this.height = height;
+         this.height = height;
         this.width = width;
         this.lenght = lenght;
     }
@@ -28,7 +29,11 @@ package com.company;
         // не приймає жодного параметру
     }
 
-    void square (){
+     Podium(double height, double weight, int age) {
+         super(height, weight, age);
+     }
+
+     void square (){
     double squ; squ = width * lenght;
     System.out.println("Площа подіуму: " + squ);
     }
@@ -67,5 +72,10 @@ package com.company;
 
     public void setLenght(double lenght) {
         this.lenght = lenght;
+    }
+   //
+    void backLenght (){
+         imtf();
+        System.out.println("Довжина подіуму: " + getLenght());
     }
 }

@@ -42,10 +42,19 @@ public class Main {
         white.people();
         System.out.println("Кількість території на одну людину: "+ white.terutory());
         System.out.println("Кількість території на одну людину(2): "+ white.terutory(110,20,200));
-
+//
         Podium podium = new Podium(150, 2, 20);
         white.s(podium);
 
+        System.out.println();
 
+        Models olena = new Models(170.0,45.5,23);
+        olena.test();
+        System.out.println();
+
+        alla.ideal();
+        first.backLenght();
+        white.backSeat();
+        olena.backAge();
     }
 }
